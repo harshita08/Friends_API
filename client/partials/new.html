@@ -1,0 +1,12 @@
+<div ng-controller="newCtrl as NC">
+
+	<h2>Create Friends!</h2>
+	<form ng-submit="NC.addFriend()">
+		<h4>Name: <input type="text" ng-model="NC.newFriend.name"></h4>
+		<h4>City: <input type="text" ng-model="NC.newFriend.city"></h4>
+		<h4>Age: <input type="text" ng-model="NC.newFriend.age"></h4>
+
+		<input type="submit" value="Submit">
+	</form>
+
+</div>

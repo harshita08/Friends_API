@@ -1,0 +1,18 @@
+<div ng-controller="newCtrl as NC">
+
+	<h2>Edit Friend!</h2>
+	<h2>Helloooo</h2>
+	<form>
+		<h4>Name: 
+			<input type="text" ng-model="NC.updateFriend.name" ng-value="NC.oneFriend.name">
+		</h4>
+		<h4>City: 
+			<input type="text" ng-model="NC.updateFriend.city" ng-value="NC.oneFriend.city">
+		</h4>
+		<h4>Age: 
+			<input type="text" ng-model="NC.updateFriend.age" ng-value= "NC.oneFriend.age" >
+		</h4>
+		<input type="submit" value="Submit" ng-click="NC.editFriend(NC.oneFriend._id)">
+	</form>
+
+</div>
